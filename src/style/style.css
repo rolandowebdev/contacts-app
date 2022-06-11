@@ -3,6 +3,7 @@
   --card-color: #39475a;
   --text-color: #fff;
   --paragraph-color: #6780a3;
+  --danger-color: #d82148;
 }
 
 * {
@@ -15,7 +16,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -23,6 +24,12 @@ body {
 
 img {
   width: 100%;
+}
+
+button,
+input,
+a {
+  font-family: inherit;
 }
 
 .contact-app {
@@ -74,4 +81,17 @@ img {
 .contact-item__body .contact-item__username {
   font-size: 14px;
   color: var(--paragraph-color);
+}
+
+.contact-item__delete {
+  margin-left: auto;
+  min-width: 2.375rem;
+  aspect-ratio: 1;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: var(--danger-color);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
